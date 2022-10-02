@@ -1,0 +1,36 @@
+{
+  "name": "speedtest",
+  "version": "0.0.1",
+  "description": "HTML5 Speedtest server",
+  "main": "index.js",
+  "repository": "https://github.com/Computroniks/speedtest.git",
+  "author": "Matthew Nickson <mnickson@sidingsmedia.com>",
+  "license": "(MIT or LGPL-3.0)",
+  "private": true,
+  "scripts": {
+    "install:client": "echo \"Installing client dependancies\" && cd client && yarn install",
+    "install:server": "echo \"Installing server dependancies\" && cd server && yarn install",
+    "postinstall": "yarn run install:client; yarn run install:server",
+    "build:server": "cd server && yarn build",
+    "build:client": "cd client && yarn build",
+    "build": "yarn build:server && yarn build:client",
+    "dev:server": "echo \"No dev script deffined yet\"",
+    "dev:client": "cd client && yarn dev",
+    "dev": "concurrently \"yarn dev:server\" \"yarn dev:client\"",
+    "lint": "eslint . --ignore-path=.gitignore",
+    "lint:fix": "eslint . --ignore-path=.gitignore --fix"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "concurrently": "^7.4.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.5.1",
+    "express": "^4.18.1",
+    "typescript": "*"
+  }
+}
