@@ -1,11 +1,15 @@
 <!-- 
-SPDX-FileCopyrightText: 2022 Sidings Media <contact@sidingsmedia.com>
+SPDX-FileCopyrightText: 2022 Matthew Nickson <mnickson@sidingsmedia.com>
 SPDX-License-Identifier: MIT
 -->
 
-# Project name
+# HTML5 Speedtest
 
-A description of what this project is and what it does
+This is a lightweight speedtest server implemented in TypeScript using
+XMLHttpRequest and web workers. This is heavily based upon
+[librespeed/speedtest](https://github.com/librespeed/speedtest) with the
+main speedtest code having been ported across from JavaScript to
+TypeScript.
 
 ## Licence
 This repo uses the [REUSE](https://reuse.software) standard in order to
