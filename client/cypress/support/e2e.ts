@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2022 Matthew Nickson <mnickson@sidingsmedia.com>
+// SPDX-License-Identifier: CC0-1.0
+
 // ***********************************************************
 // This example support/index.js is processed and
 // loaded automatically before your test files.

@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: 2021-2022 vuejs
+SPDX-License-Identifier: MIT
+-->
+
 <template>
   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" fill="currentColor">
     <path

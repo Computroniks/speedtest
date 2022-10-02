@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2022 Matthew Nickson <mnickson@sidingsmedia.com>
+// SPDX-License-Identifier: MIT
+
 // https://docs.cypress.io/api/introduction/api.html
 
 describe("My First Test", () => {

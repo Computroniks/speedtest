@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2022 Matthew Nickson <mnickson@sidingsmedia.com>
+// SPDX-License-Identifier: CC0-1.0
+
 /// <reference types="cypress" />
 // ***********************************************
 // This example commands.ts shows you how to
@@ -36,4 +39,4 @@
 //   }
 // }
 
-export { };
+export {};

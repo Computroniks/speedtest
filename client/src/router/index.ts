@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2021-2022 vuejs
+// SPDX-License-Identifier: MIT
+
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 

@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: 2022 Austin Andrews
+SPDX-License-Identifier: Apache-2.0
+-->
+
 <!-- This icon is from <https://github.com/Templarian/MaterialDesign>, distributed under Apache 2.0 (https://www.apache.org/licenses/LICENSE-2.0) license-->
 <template>
   <svg

@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2021-2022 vuejs
+// SPDX-License-Identifier: MIT
+
 import { describe, it, expect } from "vitest";
 
 import { mount } from "@vue/test-utils";

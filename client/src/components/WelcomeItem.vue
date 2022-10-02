@@ -1,3 +1,8 @@
+<!--
+SPDX-FileCopyrightText: 2021-2022 vuejs
+SPDX-License-Identifier: MIT
+-->
+
 <template>
   <div class="item">
     <i>
