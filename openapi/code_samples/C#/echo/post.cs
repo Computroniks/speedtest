@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: MIT
 
 API.v1.Echo echo = new API.v1.Echo();
-echo.message = "Hello World!");
+echo.message = "Hello World!";
 EchoResponse response = echo.post();
 if (response.statusCode == HttpStatusCode.Created)
 {
