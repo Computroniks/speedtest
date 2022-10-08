@@ -1,0 +1,8 @@
+# SPDX-FileCopyrightText: 2022 Matthew Nicskon <mnickson@sidingsmedia.com>
+# SPDX-License-Identifier: MIT
+
+type: object
+properties:
+  ip:
+    description: The IP of the client
+    type: string

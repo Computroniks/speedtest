@@ -1,0 +1,14 @@
+# SPDX-FileCopyrightText: 2022 Matthew Nicskon <mnickson@sidingsmedia.com>
+# SPDX-License-Identifier: MIT
+
+type: object
+properties:
+  code:
+    type: integer
+    description: The HTTP error code returned
+  request_id:
+    type: string
+    description: An ID identifying the request
+  msg:
+    type: string
+    description: A short description of the error

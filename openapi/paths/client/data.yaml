@@ -1,0 +1,38 @@
+# SPDX-FileCopyrightText: 2022 Matthew Nicskon <mnickson@sidingsmedia.com>
+# SPDX-License-Identifier: MIT
+
+get:
+  tags:
+   - Headless
+  summary: Get uncompressible data
+  description: >
+    This returns uncompressible random binary data for use with the speed test.
+  responses:
+    '200':
+      description: The data was generated successfully.
+      content:
+        application/octet-stream:
+          schema:
+            type: string
+            format: binary
+    default:
+      description: Unexpected error
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/Error.yaml
+          example:
+            code: 500
+            msg: An unexpected error occured
+        application/xml:
+          schema:
+            $ref: ../../components/schemas/Error.yaml
+          example:
+            code: 500
+            msg: An unexpected error occured
+        application/yaml:
+          schema:
+            $ref: ../../components/schemas/Error.yaml
+          example:
+            code: 500
+            msg: An unexpected error occured
