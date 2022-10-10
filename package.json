@@ -11,29 +11,35 @@
     "install:client": "echo \"Installing client dependancies\" && cd client && yarn install",
     "install:server": "echo \"Installing server dependancies\" && cd server && yarn install",
     "postinstall": "yarn run install:client; yarn run install:server",
-    "build:server": "cd server && yarn build",
-    "build:client": "cd client && yarn build",
-    "build:docs": "openapi bundle -o dist/server/static/generated/openapi.json",
-    "build": "yarn build:server && yarn build:client && yarn build:docs",
-    "dev:server": "echo \"No dev script deffined yet\"",
+    "openapi": "openapi",
+    "dev:server": "cd server && yarn dev",
     "dev:client": "cd client && yarn dev",
     "dev": "concurrently \"yarn dev:server\" \"yarn dev:client\"",
-    "preview-openapi": "openapi preview-docs",
-    "lint": "eslint . --ignore-path=.gitignore && openapi lint",
-    "lint:fix": "eslint . --ignore-path=.gitignore --fix"
+    "preview-openapi": "openapi preview-docs"
   },
   "devDependencies": {
     "@redocly/openapi-cli": "^1.0.0-beta.95",
+    "@types/gulp": "^4.0.9",
+    "@types/node": "^18.8.3",
     "@typescript-eslint/eslint-plugin": "^5.38.1",
     "@typescript-eslint/parser": "^5.38.1",
     "concurrently": "^7.4.0",
+    "del": "6.1.1",
     "eslint": "^8.0.1",
     "eslint-config-standard-with-typescript": "^23.0.0",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-vue": "^9.5.1",
-    "express": "^4.18.1",
+    "esm": "^3.2.25",
+    "fancy-log": "^2.0.0",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "ts-node": "^10.9.1",
     "typescript": "*"
+  },
+  "dependencies": {
+    "@types/del": "^4.0.0"
   }
 }
