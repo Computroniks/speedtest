@@ -6,6 +6,7 @@
   "author": "Matthew Nickson <mnickson@sidingsmedia.com>",
   "license": "(MIT or LGPL-3.0)",
   "private": true,
+  "main": "server/server.js",
   "scripts": {
     "install:client": "echo \"Installing client dependancies\" && cd client && yarn install",
     "install:server": "echo \"Installing server dependancies\" && cd server && yarn install",
