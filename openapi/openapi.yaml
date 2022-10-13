@@ -1,0 +1,30 @@
+# SPDX-FileCopyrightText: 2022 Matthew Nicskon <mnickson@sidingsmedia.com>
+# SPDX-License-Identifier: MIT
+
+openapi: 3.0.2
+info:
+  version: 1.0.0
+  title: Speedtest
+  contact:
+    email: mnickson@sidingsmedia.com
+  license:
+    name: MIT
+    url: 'https://github.com/Computroniks/speedtest/blob/main/LICENSES/MIT.txt'
+  description: >
+    This is the backend API for a HTML5 based speed test server.
+externalDocs:
+  description: For installation docs visit GitHub
+  url: 'https://github.com/Computroniks/speedtest'
+tags:
+  - name: Headless
+    description: Endpoints that appear on all servers
+  - name: Results
+    description: Endpoints that only appear on servers that save results
+servers:
+  - url: 'http://localhost:8000/api/v1'
+paths:
+  /client/ip:
+    $ref: paths/client/ip.yaml
+  /client/data:
+    $ref: paths/client/data.yaml
+    

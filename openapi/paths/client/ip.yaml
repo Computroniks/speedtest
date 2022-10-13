@@ -1,0 +1,56 @@
+# SPDX-FileCopyrightText: 2022 Matthew Nicskon <mnickson@sidingsmedia.com>
+# SPDX-License-Identifier: MIT
+
+get:
+  tags:
+   - Headless
+  summary: Get the clients IP address
+  description: >
+    This returns the clients IP address as it is visible to the server,
+    effort is made to use headers to get the IP of a client that is
+    behind a proxy.
+  responses:
+    '200':
+      description: The clients IP address was obtained successfully.
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/IP.yaml
+          example:
+           ip: "192.0.2.4"
+        application/xml:
+          schema:
+            $ref: ../../components/schemas/IP.yaml
+          example:
+           ip: "192.0.2.4"
+        application/yaml:
+          schema:
+            $ref: ../../components/schemas/IP.yaml
+          example:
+           ip: "192.0.2.4"
+        text/plain:
+          schema:
+            type: string
+            description: The IP of the client
+          example: "192.0.2.4"
+    default:
+      description: Unexpected error
+      content:
+        application/json:
+          schema:
+            $ref: ../../components/schemas/Error.yaml
+          example:
+            code: 500
+            msg: An unexpected error occured
+        application/xml:
+          schema:
+            $ref: ../../components/schemas/Error.yaml
+          example:
+            code: 500
+            msg: An unexpected error occured
+        application/yaml:
+          schema:
+            $ref: ../../components/schemas/Error.yaml
+          example:
+            code: 500
+            msg: An unexpected error occured
