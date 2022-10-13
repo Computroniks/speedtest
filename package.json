@@ -2,7 +2,6 @@
   "name": "speedtest",
   "version": "0.0.1",
   "description": "HTML5 Speedtest server",
-  "main": "index.js",
   "repository": "https://github.com/Computroniks/speedtest.git",
   "author": "Matthew Nickson <mnickson@sidingsmedia.com>",
   "license": "(MIT or LGPL-3.0)",
